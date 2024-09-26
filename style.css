@@ -1,20 +1,36 @@
-
 .modal.hidden {
-    display: none;
+  display: none;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .md\\:flex-row {
+    display: flex;
+    flex-direction: column;
   }
-  
-  img {
+
+  img {                                                                                             
     width: 100%;
     height: auto;
   }
-  
-  @media (min-width: 768px) {
-    .flex-col {
-      flex-direction: column;
-    }
-  
-    .md\\:flex-row {
-      flex-direction: row;
-    }
+
+  .card {
+    margin-bottom: 1.5rem;
   }
-  
+}
+
+/* Larger screen adjustments */
+@media (min-width: 768px) {
+  .md\\:flex-row {
+    flex-direction: row;
+  }
+}
