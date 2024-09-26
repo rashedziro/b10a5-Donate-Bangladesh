@@ -12,7 +12,7 @@
   flex-direction: row;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .md\\:flex-row {
     display: flex;
     flex-direction: column;
@@ -28,7 +28,6 @@
   }
 }
 
-/* Larger screen adjustments */
 @media (min-width: 768px) {
   .md\\:flex-row {
     flex-direction: row;
